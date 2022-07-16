@@ -1,0 +1,30 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+    <title>{{page.title}}</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="openseadragon-bin-3.1.0/openseadragon.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@iiif/vault@latest/dist/index.umd.js"></script>
+    <!-- CSS stylesheet -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@recogito/annotorious@2.7.6/dist/annotorious.min.css">
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@recogito/annotorious-openseadragon@2.7.6/dist/openseadragon-annotorious.min.js"></script>
+    
+    <script src="js/contentstate.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    
+    <header>
+        <div><a id="logo" href="index.html?iiif-content=https://iiif-test.github.io/Space/manifests/webb1.json">IIIF Share it</div>
+        <div><a href="about.html">About</a></div>
+        <div><a href="examples.html">Examples</a></div>
+    </header>
+
+    {{ content }}
+</body>
+</html>

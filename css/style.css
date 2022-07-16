@@ -1,0 +1,210 @@
+#osd {
+    height: 80vh;
+    width: 100%;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+    font-family: Lato,sans-serif;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    background-color: #282a35;
+    color: #efeff0;
+    overflow: hidden;
+    margin:0;
+    padding: 5px;
+}
+main {
+    margin: 10px;
+}
+
+#buttons {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+header div {
+    display: flex;
+    align-content: middle;
+    align-items: center;
+    padding:15px;
+    color: #efeff0;
+}
+
+header div:hover {
+    display: flex;
+    align-content: middle;
+    align-items: center;
+    padding:15px;
+    background-color:white;
+    color: #5a5a5a;
+}
+
+header div a {
+    color: inherit;
+    text-decoration: none;
+    text-align: center;
+}
+
+header div a:hover {
+    text-decoration: underline;
+}
+
+#logo {
+    font-size: 16pt;
+    margin-right: 45px;
+}
+
+button, .button {
+    background-color: #4483c4;
+    border: 1px solid #4483c4;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0;
+    margin-right: 8px;
+    outline: none;
+    text-decoration: none;
+    white-space: nowrap;
+    padding: 6px 18px;
+    vertical-align: middle;
+    border-radius: 2px;
+    line-height: 27px;
+    font-size: 14px;
+    text-align: right;
+}
+
+button:hover, .button:hover {
+    background-color: #4f92d7;
+    border-color: #4f92d7;
+}
+
+.dialog {
+    padding: 0px 20px 20px 20px;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    background-color: #fff;
+    border: 1px solid #ccc;
+    color: #333;
+}
+
+.dialog::backdrop {
+    background-color:rgba(0,0,0,0.85);
+}
+
+.dialog h2 {
+    padding: 5px;
+}
+
+#share_img {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+
+#share_img img {
+    border: 1px black solid;
+    width:300px;
+    height:200px;
+}
+
+#social_shares {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top:10px;
+}
+
+.share_opt {
+    width:100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+.share_opt a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding:2px;
+    text-decoration: none;
+    color: black;
+}
+
+.share_opt a:hover {
+    border: 1px black solid;
+    padding:1px;
+}
+
+.social_image {
+    display: flex;
+    justify-content: center;
+    height:50px;
+    line-height:50px;
+}
+
+.share_label {
+    text-align: center;
+    width: 110px;
+}
+
+.url {
+    border: 1px solid #e0e0e0;
+    background-color: #f9f9f9;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+}
+
+.url input {
+    width: 300px;
+    background-color: #f9f9f9;
+    border: none;
+    padding: 10px;
+}
+
+.url a {
+    text-decoration: none;
+    color: #0000ee;
+    font-weight: bold;
+}
+
+.url a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+#OpenManifest div #url_text {
+   width: 90vw; 
+}
+
+#OpenManifest div {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#OpenManifest div a:focus {
+    border: 0px black solid;
+    border-color: white;
+}
+
+main.post {
+    max-width: 1012px;
+    margin-right: auto;
+    margin-left: auto;
+
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 16px;
+    line-height: 1.5;
+    word-wrap: break-word;
+}
