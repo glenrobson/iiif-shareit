@@ -5,8 +5,8 @@ title: IIIF Share it!
 <p>Use the viewer below to zoom into a part of the image you would like to share. Then hold down SHIFT and drag your mouse to create a box. Then add some text and click share.</p>
 <div id="buttons" style="display:none">
     <a id="new" class="button">New</a>
-    <button id="share"  onclick="share();">Share</button>
-    <button id="change"  onclick="toggleDialog('share_dialog');">Change image</button>
+    <button id="share" onclick="share();">Share</button>
+    <a id="change" class="button" href="index.html">Change image</a>
 </div>
 <div id="osd"></div> 
 {% include openManifestDialog.html %}
