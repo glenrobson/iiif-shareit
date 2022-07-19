@@ -52,7 +52,7 @@ function showShare(annotation) {
     let twitter = document.getElementById('twitter_link');
 
     linkBack = " see this image in context with IIIF Share it!";
-    twitter.href = "https://twitter.com/intent/tweet?url=" + encodeURI(contentState) + "&hashtags=IIIF&related=IIIF&text=" + encodeURI(annotation.body[0].value + linkBack);
+    twitter.href = "https://twitter.com/intent/tweet?url=" + encodeURI(contentState) + "&hashtags=IIIF,IIIFShareIt&related=IIIF&text=" + encodeURI(annotation.body[0].value + linkBack);
 
     toggleDialog("share_dialog");
 }
