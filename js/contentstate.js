@@ -180,7 +180,7 @@ function setAnnoViewMode(anno, annotation) {
     let newBtn = document.getElementById("new");
 
     regionSplit = annotation.target.selector.value.replace('xywh=pixel:','').split(',')
-    newBtn.href = "index.html?iiif-content=" + getContentState("xywh=" + regionSplit[0] + "," + regionSplit[1] + "," + regionSplit[2] + "," + regionSplit[3], annotation.body);
+    newBtn.href = "index.html?iiif-content=" + getContentState(null, null);
 }
 
 function getInfoJsonURL(canvas) {
